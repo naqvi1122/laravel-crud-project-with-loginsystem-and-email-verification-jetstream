@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\project;
+use DB;
 
 class ProjectController extends Controller
 {
@@ -122,10 +123,56 @@ class ProjectController extends Controller
         project::find($id)->delete();
         return redirect()->back();
     }
-    public function index(Request $request)
+
+    //inline edit 
+
+    function index()
     {
-        
+    	$data = DB::table('project')->get();
+    	return view('table_edit', compact('data'));
     }
+
+    function action(Request $request)
+    {
+    	if($request->ajax())
+    	{
+    		if($request->action == 'edit')
+    		{
+    			$data = array(
+    				'name'	=>	$request->name,
+    				'email'		=>	$request->email,
+    				'phone'		=>	$request->phone,
+					'msg'       =>	$request->msg
+    			);
+    			DB::table('project')
+    				->where('id', $request->id)
+    				->update($data);
+    		}
+    		if($request->action == 'delete')
+    		{
+    			DB::table('project')
+    				->where('id', $request->id)
+    				->delete();
+    		}
+    		return response()->json($request);
+    	}
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
