@@ -35,4 +35,8 @@ Route::get('/project/delete/{id}',[ProjectController::class,'destroy'] );
 Route::get('/project/edit/{id}',[ProjectController::class,'edit'] );
 Route::post('/project/update/{id}',[ProjectController::class,'update'] );
 
+Route::get('/tabledit',[ProjectController::class,'index'] );
+
+Route::post('/tabledit/action/',[ProjectController::class,'action'] )->name('tabledit.action');
+
 
