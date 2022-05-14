@@ -26,6 +26,15 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# laravel-crud-project
+laravel project with crud ,login with email verification
+![image](https://user-images.githubusercontent.com/96628989/167932597-ac738012-5a1e-4a07-9ad4-8bcce0688b93.png)
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/96628989/167932402-a8302bb6-0332-43e4-985c-6701c2c1753e.png)
 
 ## Laravel Sponsors
 
