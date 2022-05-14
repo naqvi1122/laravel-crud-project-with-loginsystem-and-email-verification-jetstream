@@ -35,6 +35,8 @@ laravel project with crud ,login with email verification
 
 
 ![image](https://user-images.githubusercontent.com/96628989/167932402-a8302bb6-0332-43e4-985c-6701c2c1753e.png)
+![image](https://user-images.githubusercontent.com/96628989/168440469-0b9757b3-c0f4-4d14-88ab-775862d1877c.png)
+
 
 ## Laravel Sponsors
 
